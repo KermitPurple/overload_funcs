@@ -1,6 +1,11 @@
-#!/usr/bin/env python3
-from overload import overload
+# Overloading Functions
 
+Just playing around and seeing how overloading functions could be done.
+
+
+### example
+
+```python
 @overload
 def f(a: int, b: int) -> int:
     return a + b
@@ -21,4 +26,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+```

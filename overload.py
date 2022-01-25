@@ -22,7 +22,6 @@ class OverloadFunction:
 
     def load(self, func: Callable[P, R]):
         '''Add a function to the overloaded'''
-        print(func.__annotations__)
         self.overloaded[convert_annotations(func.__annotations__)] = func
         return self
 
